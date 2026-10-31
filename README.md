@@ -131,6 +131,29 @@ Update this list to match the final implementation.
 - Export a structured JSON or Markdown investigation report.
 - Add regression tests for malformed URLs, redirects, internationalised domain names, IP-literal URLs, and unusually long inputs.
 
+## Demonstration Video
+
+A demonstration of SentinelAI covering URL analysis,
+threat scoring, explainable findings, testing and
+known limitations.
+
+**Demo Video:** [Watch SentinelAI Demonstration](https://drive.google.com/file/d/1Gh6Sgtua1_A4SwDwZUxT5Rxsd-YLgMsg/view?usp=sharing)
+
+## Supplementary Cybersecurity Project
+
+### Apex Planet – Task 2: Network Security
+
+This project demonstrates my practical experience
+with network reconnaissance, vulnerability assessment,
+traffic analysis and firewall configuration.
+
+Tools explored include Nmap, Nessus, Wireshark,
+hping3 and iptables.
+
+**GitHub/linkedin Repository:**
+https://github.com/manu0lita/apex-planet-task-2-network-security
+https://lnkd.in/p/d3tUvZvz
+
 ## 14. Responsible AI use
 
 AI tools were used as assistants during project preparation. The exact tools, generated or suggested components, mistakes found, and manual validation steps are recorded in [`AI_USAGE.md`](AI_USAGE.md). AI-generated findings are not treated as verified facts without independent checks.
