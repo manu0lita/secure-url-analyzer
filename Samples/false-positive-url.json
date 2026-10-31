@@ -1,0 +1,15 @@
+{
+  "test_case_id": "FALSE-POSITIVE-LIMITATION-001",
+  "description": "Benign-looking URL with a long opaque query value. Use it to check that a high-entropy-looking value is treated as one signal, not proof of maliciousness.",
+  "input": {
+    "url": "https://www.example.com/search?ref=7QvN2xK9pL4mR8sT5aB6cD1eF3gH"
+  },
+  "test_intent": "Check whether the analyser avoids declaring a URL malicious solely because a query parameter looks random or has relatively high entropy.",
+  "expected_checks": {
+    "url_parsed": true,
+    "https_scheme_detected": true,
+    "entropy_indicator_is_explained_if_present": true,
+    "entropy_alone_does_not_prove_maliciousness": true
+  },
+  "safety_note": "This uses the reserved example.com domain and is a static test string. The test does not establish the real-world reputation of any website."
+}

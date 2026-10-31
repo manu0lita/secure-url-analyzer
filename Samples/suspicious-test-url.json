@@ -1,0 +1,15 @@
+{
+  "test_case_id": "SYNTHETIC-URL-001",
+  "description": "Synthetic URL string for testing suspicious-looking URL features. The .test top-level domain is reserved for testing and is not intended to identify a real website.",
+  "input": {
+    "url": "http://account-verify-login.example.test/session/update?token=Q7vN2xK9pL4mR8sT"
+  },
+  "test_intent": "Check whether the analyser identifies observable indicators such as plaintext HTTP and login/verification wording, while explaining that these indicators do not prove that the URL is malicious.",
+  "expected_checks": {
+    "url_parsed": true,
+    "http_scheme_detected": true,
+    "suspicious_wording_can_be_reported": true,
+    "malicious_verdict_based_on_url_text_alone_is_not_proof": true
+  },
+  "safety_note": "This is a synthetic test string. Do not change the .test domain to a real organisation or visit a live suspicious URL outside an authorised, isolated test environment."
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "note": "These are behavioural expectations for tests, not a fabricated scan result. Adjust field names to match the application's real output schema.",
+  "cases": [
+    {
+      "test_case_id": "BENIGN-001",
+      "input_file": "benign-url.json",
+      "must_check": {
+        "url_is_parsed": true,
+        "scheme_is_https": true,
+        "analysis_completes_without_error": true,
+        "does_not_claim_proven_maliciousness_without_evidence": true
+      },
+      "expected_interpretation": "A conventional HTTPS URL should not be called malicious solely because it was analysed. The application may report unknown or unavailable reputation if no real reputation source is configured."
+    },
+    {
+      "test_case_id": "SYNTHETIC-URL-001",
+      "input_file": "suspicious-test-url.json",
+      "must_check": {
+        "url_is_parsed": true,
+        "scheme_is_http": true,
+        "plaintext_http_indicator_is_explained": true,
+        "suspicious_words_are_indicators_not_proof": true,
+        "analysis_completes_without_error": true
+      },
+      "expected_interpretation": "The application may raise risk indicators for HTTP and login/verification wording. It must not claim confirmed phishing or credential theft from the URL string alone."
+    },
+    {
+      "test_case_id": "FALSE-POSITIVE-LIMITATION-001",
+      "input_file": "false-positive-url.json",
+      "must_check": {
+        "url_is_parsed": true,
+        "https_scheme_is_detected": true,
+        "entropy_indicator_is_explained_if_present": true,
+        "high_entropy_value_alone_is_not_treated_as_conclusive_proof": true
+      },
+      "expected_interpretation": "A long or high-entropy query value can occur for legitimate reasons, such as tracking or opaque identifiers. It must not be treated as proof of maliciousness by itself."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "test_case_id": "BENIGN-001",
+  "description": "Baseline URL-format test using the reserved example.com domain.",
+  "input": {
+    "url": "https://www.example.com/"
+  },
+  "test_intent": "Check that a conventional HTTPS URL is parsed successfully and is not labelled malicious without supporting evidence.",
+  "expected_checks": {
+    "url_parsed": true,
+    "https_scheme_detected": true,
+    "malicious_verdict_without_other_evidence": false
+  }
+}

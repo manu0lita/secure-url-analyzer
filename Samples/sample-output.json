@@ -1,0 +1,15 @@
+{
+  "status": "TEMPLATE_REPLACE_WITH_REAL_RUN",
+  "warning": "This file is not evidence of a successful test yet. Replace this template with the actual JSON output exported or captured from your final application after running a test.",
+  "test_case_id": "BENIGN-001",
+  "input_url": "https://www.example.com/",
+  "actual_run": false,
+  "run_date_utc": null,
+  "application_version": null,
+  "verdict": null,
+  "threat_score": null,
+  "confidence": null,
+  "findings": [],
+  "data_provenance": "Record which fields came from local heuristics, live lookups, cached sources, or simulated/mock data.",
+  "notes": "After running the application, replace this entire template with the actual output. Do not invent a score, confidence value, DNS response, certificate result, or threat-intelligence match."
+}
