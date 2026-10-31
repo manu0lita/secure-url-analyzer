@@ -5,7 +5,7 @@ This document describes how AI assistance was used while preparing SentinelAI �
 ## 1. Which AI tools did you use?
 
 - **ChatGPT (OpenAI):** Used during preparation of the project documentation, test-case planning, and review of the dashboard output shown for this assessment.
-- **Other tools:** Add every other AI tool actually used to design, generate, debug, or review the project (for example, Gemini, Claude, Copilot, or an IDE assistant). If none, write “None”.
+- **Other tools:** Add every other AI tool actually used to design, generate, debug, or review the project (for example, Gemini, Claude, Copilot, or an IDE assistant). 
 
 ## 2. How did AI assist you?
 
